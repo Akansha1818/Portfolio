@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Aditya Raj Thakur, a software developer passionate about coding, games, blogging, and traveling.">
+    <meta property="og:title" content="Aditya Raj Thakur - Portfolio">
+    <meta property="og:description" content="Software developer with a passion for creating impactful solutions.">
+    <meta property="og:image" content="E:\webd\webd\portfolio\images\AdityaThakur.jpg">
+    <meta property="og:url" content="adityarajthakur.co">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="E:\webd\webd\portfolio\images\favicon.ico">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            transition: background-color 0.4s ease-in-out;
+            width: 100%;
+        }
+        header.scrolled{
+            background-color: green;
+            width: fit-content;
+            min-width: 100vw;
+        }
+        ul>a{
+            cursor: pointer;
+        }
+        a:hover{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .wave{
+            display: inline-block;
+            animation: waving-hand 2.5s infinite;
+            transform-origin: 70% 70%;
+        }
+        .card{
+            transform: translateX(-100%);
+            transition: all 0.6s ease;
+        }
+        .card.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        @keyframes waving-hand{
+            0%{
+                transform: rotate(0deg);
+            }
+            10%{
+                transform: rotate(14deg);
+            }
+            20%{
+                transform: rotate(-8deg);
+            }
+            30%{
+                transform: rotate(14deg);
+            }
+            40%{
+                transform: rotate(-4deg);
+            }
+            50%{
+                transform: rotate(10deg);
+            }
+            60%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body class="bg-[url('/images/bg.jpg')] bg-top bg-contain">
+    <header id="nav" class="sticky top-0 z-50 opacity-80">
+        <div class="nav flex place-content-between md:place-content-around items-center p-8 bg-transparent uppercase mx-auto"> 
+                <ul class="text-xs flex place-content-evenly gap-2 items-center justify-evenly md:gap-4 md:text-base lg:text-lg lg:gap-8 text-white">
+                    <a class="flex items-center gap-x-2" href="#nav"><svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 2px;"><path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"></path></svg>Home</a>
+                    <a href="#sec2" class="flex items-center gap-x-2"><svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 2px;"><path d="M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"></path></svg>About</a>
+                    <a href="#sec3" class="flex items-center gap-x-2"><svg stroke="white" fill="white" stroke-width="0" t="1569683753031" viewBox="0 0 1024 1024" version="1.1" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 2px;"><defs></defs><path d="M312.1 591.5c3.1 3.1 8.2 3.1 11.3 0l101.8-101.8 86.1 86.2c3.1 3.1 8.2 3.1 11.3 0l226.3-226.5c3.1-3.1 3.1-8.2 0-11.3l-36.8-36.8c-3.1-3.1-8.2-3.1-11.3 0L517 485.3l-86.1-86.2c-3.1-3.1-8.2-3.1-11.3 0L275.3 543.4c-3.1 3.1-3.1 8.2 0 11.3l36.8 36.8z"></path><path d="M904 160H548V96c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H120c-17.7 0-32 14.3-32 32v520c0 17.7 14.3 32 32 32h356.4v32L311.6 884.1c-3.7 2.4-4.7 7.3-2.3 11l30.3 47.2v0.1c2.4 3.7 7.4 4.7 11.1 2.3L512 838.9l161.3 105.8c3.7 2.4 8.7 1.4 11.1-2.3v-0.1l30.3-47.2c2.4-3.7 1.3-8.6-2.3-11L548 776.3V744h356c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32z m-40 512H160V232h704v440z"></path></svg>Projects</a>
+                    <a href="#sec4" class="flex items-center gap-x-2"><svg stroke="white" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 1.2em;"><path d="M7 5C7 3.89543 7.89543 3 9 3C10.1046 3 11 3.89543 11 5C11 5.74028 10.5978 6.38663 10 6.73244V14.0396H11.7915C12.8961 14.0396 13.7915 13.1441 13.7915 12.0396V10.7838C13.1823 10.4411 12.7708 9.78837 12.7708 9.03955C12.7708 7.93498 13.6662 7.03955 14.7708 7.03955C15.8753 7.03955 16.7708 7.93498 16.7708 9.03955C16.7708 9.77123 16.3778 10.4111 15.7915 10.7598V12.0396C15.7915 14.2487 14.0006 16.0396 11.7915 16.0396H10V17.2676C10.5978 17.6134 11 18.2597 11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 18.2597 7.4022 17.6134 8 17.2676V6.73244C7.4022 6.38663 7 5.74028 7 5Z" fill="white"></path></svg>Skills</a>
+                    <a href="#sec5" class="flex items-center gap-x-2"><svg stroke="white" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 2px;"><path d="M7 18H17V16H7V18Z" fill="white"></path><path d="M17 14H7V12H17V14Z" fill="white"></path><path d="M7 10H11V8H7V10Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6 2C4.34315 2 3 3.34315 3 5V19C3 20.6569 4.34315 22 6 22H18C19.6569 22 21 20.6569 21 19V9C21 5.13401 17.866 2 14 2H6ZM6 4H13V9H19V19C19 19.5523 18.5523 20 18 20H6C5.44772 20 5 19.5523 5 19V5C5 4.44772 5.44772 4 6 4ZM15 4.10002C16.6113 4.4271 17.9413 5.52906 18.584 7H15V4.10002Z" fill="white"></path></svg>Research</a>
+                    <a href="#sec6" class="flex items-center gap-x-2"><svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 1.1em;"><path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path></svg>Activities</a>
+                </ul>
+        </div>
+    </header>
+    <section class="m-auto">
+        <div class="hero flex items-center justify-around mt-32 gap-8">
+            <div class="left-hero place-content-around items-center flex-col text-2xl md:text-3xl lg:text-[2.5em]">
+                <div class="text-white font-semibold mb-8">
+                    Hi There!
+                    <span class="wave">👋🏻</span>
+                </div>
+                <div class="text-white font-semibold mb-16">
+                    I'M 
+                    <span class="text-green-700 font-bold">Aditya Raj Thakur</span>
+                </div>
+                <div class="text-green-700 font-bold">
+                    <span class="auto-type"></span>
+                </div>
+            </div>
+            <div id="right-hero" class="w-[30%]">
+                    <img src="images/AdityaThakur.jpg" alt="" width="80%" class="rounded-3xl">
+            </div>
+        </div>
+    </section>
+    <section id="sec2" class="mt-32 min-h-screen">
+        <div id="hero-2" class="flex-col items-center justify-around">
+            <div class="text-white text-2xl md:text-[2.7em] text-center">LET ME <span class="text-green-700 font-semibold">INTRODUCE</span> MYSELF</div>
+            <div class="text-white text-sm mx-[10%] mt-[5%] md:text-lg flex items-center gap-20 lg:text-xl">
+                <span class="leading-7 md:leading-10 italic card">Hi Everyone, I am [Your Name] from Bhubaneswar, India.
+                    I am currently employed as a software developer at Juspay.
+                    I have completed Integrated MSc (IMSc) in Maths and Computing at BIT Mesra.
+                    <br>
+                    Apart from coding, some other activities that I love to do!
+                    <br>
+                     * Playing Games
+                     <br>
+                     * Writing Tech Blogs
+                     <br>
+                     * Travelling
+                     <br>
+                    "Strive to build things that make a difference!"
+                    
+                    [Your Name]
+                </span>
+                <img src="https://portfolio-9-28kh.onrender.com/static/media/avatar.5852f40fbb38aa284829fa3fb7722225.svg" alt="" class="w-[30%] md:w-[50%] card">
+            </div>
+        </div>
+    </section>
+    <section id="sec3" class="min-h-screen m-auto">
+        <div class="flex-col items-center justify-center text-center mx-8">
+            <div class="text-white text-2xl md:text-[2.7em] text-center">My Recent <span class="text-green-700 font-semibold">Works</span></div>
+            <div class="text-white text-sm mx-[10%] md:text-lg mt-8  lg:text-xl">Here are few projects I've worked on recently.</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8 w-full text-white">
+                <div class="border-2 border-green-800 p-8 italic card text-sm md:text-lg">
+                    <span class="text-green-700 font-bold text-lg">Project1</span>
+                    <p class="leading-8 mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consectetur beatae et veritatis earum quod quia accusamus? Laudantium dolores doloribus provident repellendus fugit! Nobis quibusdam iure cum esse ut? Delectus!</p>
+                    <button class="bg-green-800 px-2 py-1 flex items-center gap-2 rounded-lg m-auto mt-8">
+                        <svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+                        <a href="">Github</a>
+                    </button>
+                </div>
+                <div class="border-2 border-green-800 p-8 italic card text-sm md:text-lg">
+                    <span class="text-green-700 font-bold text-lg">Project2</span>
+                    <p class="leading-8 mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quia doloribus. Optio consequatur quidem atque obcaecati debitis quasi sunt iure nulla, saepe, dolor modi ea sapiente reiciendis ratione, harum quibusdam.</p>
+                    <button class="bg-green-800 px-2 py-1 flex items-center gap-2 rounded-lg m-auto mt-8">
+                        <svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+                        <a href="">Github</a>
+                    </button>
+                </div>
+                <div class="border-2 border-green-800 p-8 italic card text-sm md:text-lg">
+                    <span class="text-green-700 font-bold text-lg">Project3</span>
+                    <p class="leading-8 mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita nobis maiores iusto nesciunt labore ad excepturi? Quidem voluptatum esse velit labore repellendus saepe. Quisquam autem possimus quos saepe voluptates?</p>
+                    <button class="bg-green-800 px-2 py-1 flex items-center gap-2 rounded-lg m-auto mt-8">
+                        <svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+                        <a href="">Github</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec4" class="min-h-screen m-auto">
+        <div class="flex-col items-center justify-center text-center mx-8">
+            <div class="text-white text-2xl md:text-[2.7em] text-center">My Top <span class="text-green-700 font-semibold">Skills</span></div>
+            <div class="text-white text-sm mx-[10%] md:text-lg mt-8  lg:text-xl">Here are few of my skills.</div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
+                <div class="border-2 border-green-800 p-8 flex items-center justify-center card text-sm md:text-lg">
+                    <span class="text-white text-lg italic">lorem</span>
+                </div>
+                <div class="border-2 border-green-800 p-8 flex items-center justify-center card text-sm md:text-lg">
+                    <span class="text-white text-lg italic">Lorem</span>
+                </div>
+                <div class="border-2 border-green-800 p-8 flex items-center justify-center card text-sm md:text-lg">
+                    <span class="text-white text-lg italic">Lorem</span>
+                </div>
+                <div class="border-2 border-green-800 p-8 flex items-center justify-center card text-sm md:text-lg">
+                    <span class="text-white text-lg italic">Lorem</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec5" class="min-h-screen m-auto flex">
+        <div class="flex-col items-center justify-center mx-8">
+            <div class="text-white text-2xl md:text-[2.7em] text-center">My Recent <span class="text-green-700 font-semibold">Researches</span></div>
+            <div class="text-white text-sm mx-[10%] md:text-lg mt-8  lg:text-xl text-center">Here are few of my researches.</div>
+            <div class="flex gap-16 items-center justify-center">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8 w-full">
+                    <div class="border-2 border-green-800 p-8 flex items-center card text-sm md:text-lg">
+                        <span class="text-white italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aut modi unde sed tempora, laborum esse totam ea minima mollitia neque maiores architecto recusandae placeat exercitationem quae. Nam, animi fugit.</span>
+                    </div>
+                    <div class="border-2 border-green-800 p-8 flex items-center card text-sm md:text-lg">
+                        <span class="text-white italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aut modi unde sed tempora, laborum esse totam ea minima mollitia neque maiores architecto recusandae placeat exercitationem quae. Nam, animi fugit.</span>
+                    </div>
+                    <div class="border-2 border-green-800 p-8 flex items-center card text-sm md:text-lg">
+                        <span class="text-white italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aut modi unde sed tempora, laborum esse totam ea minima mollitia neque maiores architecto recusandae placeat exercitationem quae. Nam, animi fugit.</span>
+                    </div>
+                    <div class="border-2 border-green-800 p-8 flex items-center card text-sm md:text-lg">
+                        <span class="text-white italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aut modi unde sed tempora, laborum esse totam ea minima mollitia neque maiores architecto recusandae placeat exercitationem quae. Nam, animi fugit.</span>
+                    </div>
+                </div>
+                <!-- <img src="images/AdityaThakur.jpg" alt="" width="30%"> -->
+            </div>
+        </div>
+    </section>
+    <section id="sec6" class="min-h-screen m-auto">
+        <div class="flex-col items-center justify-center text-center mx-8">
+            <div class="text-white text-2xl md:text-[2.7em] text-center">My <span class="text-green-700 font-semibold">Extra</span> Curriculars</div>
+            <div class="text-white text-sm mx-[10%] md:text-lg mt-8  lg:text-xl">Here are few of my extra-curriculars.</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8 w-full text-white">
+                <div class="border-2 border-green-800 p-8 italic card text-sm md:text-lg">
+                    <span class="text-green-700 font-bold text-lg">Extra-curricular1</span>
+                    <p class="leading-8 mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium mollitia nam autem ipsam, perferendis quae cumque recusandae aliquam esse, consequuntur amet tenetur dignissimos! Cupiditate laboriosam enim rem error maxime.</p>
+                </div>
+                <div class="border-2 border-green-800 p-8 italic card text-sm md:text-lg">
+                    <span class="text-green-700 font-bold text-lg">Extra-curricular2</span>
+                    <p class="leading-8 mt-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus quis eos ullam esse commodi quam magnam ab placeat. Rerum a modi, ipsa neque quos id qui placeat quae. Ea, esse?</p>
+                </div>
+                <div class="border-2 border-green-800 p-8 italic card text-sm md:text-lg">
+                    <span class="text-green-700 font-bold text-lg">Extra-curricular3</span>
+                    <p class="leading-8 mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, odio molestiae quidem pariatur nesciunt fugiat maiores modi id aliquam ducimus saepe ab hic consequatur vero provident, ipsa autem a nemo?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec7" class="min-h-screen m-auto">
+        <div class="flex-col items-center justify-center text-center mx-8">
+            <div class="text-white text-2xl md:text-[2.7em] text-center">My <span class="text-green-700 font-semibold">Certificates</span></div>
+            <div class="text-white text-sm mx-[10%] md:text-lg mt-8  lg:text-xl">Here are few of my Certificates</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8 w-full text-white">
+                <div class="border-2 border-green-800 p-8 italic card text-sm md:text-lg">
+                    <img src="images/bg.jpg" alt="">
+                    <p class="text-green-700 font-bold text-lg mt-8">Certificate1</p>
+                    <p class="leading-8 mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima dolore voluptatem ea quia recusandae blanditiis, harum aliquam accusamus, architecto sed illum eos saepe sapiente voluptatum dolores ducimus soluta quas perferendis!</p>
+                </div>
+                <div class="border-2 border-green-800 p-8 italic card text-sm md:text-lg">
+                    <img src="images/bg.jpg" alt="">
+                    <p class="text-green-700 font-bold text-lg mt-8">Certificate2</p>
+                    <p class="leading-8 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolor, debitis libero qui, similique expedita quaerat pariatur blanditiis natus veritatis itaque necessitatibus modi voluptatem dicta. Soluta, consequuntur! Officiis, nam amet.</p>
+                </div>
+                <div class="border-2 border-green-800 p-8 italic card text-sm md:text-lg">
+                    <img src="images/bg.jpg" alt="">
+                    <p class="text-green-700 font-bold text-lg mt-8">Certificate3</p>
+                    <p class="leading-8 mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque velit iure dolorem excepturi necessitatibus voluptatem deleniti non eligendi, magnam laboriosam, dolores temporibus est distinctio unde nisi in ab, ea provident!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec8" class="h-[50vh] m-auto">
+        <div class="flex-col items-center justify-center text-center mx-8">
+            <div class="text-white text-2xl md:text-[2.7em] text-center">Find Me On</div>
+            <div class="text-white text-sm mx-[10%] md:text-lg mt-8  lg:text-xl">Feel free to <span class="text-green-700 font-semibold">connect</span> with me</div>
+            <div class="flex items-center justify-center mt-12 gap-6">
+                <a href=""><svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg></a>
+                <a href=""><svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0 0 75-94 336.64 336.64 0 0 1-108.2 41.2A170.1 170.1 0 0 0 672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 0 0-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 0 1-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 0 1-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z"></path></svg></a>
+                <a href=""><svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 448 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a>
+                <a href=""><svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z"></path></svg></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="flex text-white items-center justify-around bg-black px-6 py-6">
+            <div class="">Developed by Akanksha</div>
+            <div class="">Copyright © 2024 SB</div>
+            <div class="flex gap-6">
+                <a href=""><svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg></a>
+                <a href=""><svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0 0 75-94 336.64 336.64 0 0 1-108.2 41.2A170.1 170.1 0 0 0 672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 0 0-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 0 1-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 0 1-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z"></path></svg></a>
+                <a href=""><svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a>
+                <a href=""><svg stroke="white" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z"></path></svg></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
